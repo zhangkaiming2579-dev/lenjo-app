@@ -1,5 +1,19 @@
 # Lenjo FAQ / 练境常见问题
 
+For detailed terms and practical questions, read the [English feature guide](feature-guide.md) or [中文功能指南](feature-guide.zh-CN.md).
+
+## 可以拍照识别热量和卡路里吗？ / Can a meal photo estimate calories?
+
+可以。餐食照片分析估算食物、热量（kcal）和蛋白质、碳水、脂肪。检查份量、酱汁和烹调用油，修改后再确认保存。多人合餐时需要按实际吃的部分调整。
+
+Yes. Meal photo analysis estimates food items, calories (kcal), protein, carbohydrates and fat. Check portions, sauces and cooking oil, then edit and confirm. For shared meals, adjust to what you ate.
+
+## AI 饮食可以和健身管理一起用吗？ / Can AI discuss nutrition and workouts together?
+
+可以结合已保存的饮食、体重目标、实际训练与恢复信息，向教练询问营养和下一次训练。建议取决于数据完整程度，需要审核。
+
+Discuss saved meals, weight goals, actual workouts and recovery context with the coach. Review suggestions in light of the completeness of the data.
+
 ## What is Lenjo? / 练境是什么？
 
 Lenjo (练境) is an iPhone AI fitness coach and workout tracker with optional Apple Watch support. It connects plans, completed sets, recovery context and nutrition records.

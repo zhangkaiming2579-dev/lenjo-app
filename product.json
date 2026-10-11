@@ -22,7 +22,7 @@
     "AI workout planning",
     "Set-by-set workout tracking",
     "Apple Watch recovery guidance",
-    "Meal photo and nutrition logging",
+    "Meal photo calorie estimates and macro tracking",
     "Timed cardio sessions",
     "Progress and coaching memory"
   ],
@@ -35,5 +35,9 @@
     "https://apps.apple.com/us/app/id6784486285",
     "https://apps.apple.com/cn/app/id6784486285",
     "https://lenjoapp.com/en/"
-  ]
+  ],
+  "featureGuides": {
+    "en": "https://zhangkaiming2579-dev.github.io/lenjo-app/guide/",
+    "zh-CN": "https://zhangkaiming2579-dev.github.io/lenjo-app/zh/guide/"
+  }
 }

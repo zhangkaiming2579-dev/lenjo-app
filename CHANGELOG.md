@@ -1,5 +1,12 @@
 # Public release notes
 
+## 2026-10-11 — Product information update
+
+- Added English and Chinese feature guides with definitions and practical questions across 14 topics: meal photos, calorie and macro logging, AI nutrition, coaching, plans, workout logs, strength progress, beginner and home training, Watch, recovery, cardio, body trends, photo recognition and local coaching context.
+- Linked the guides from product pages and README files; included both guide URLs in the sitemap and product facts JSON.
+- Updated product descriptions and FAQ to explain food photo estimates and nutrition alongside workout management.
+- Removed personal names from product copy and kept public screenshots at their natural aspect ratios.
+
 ## 1.0.18 — App Store version checked 2026-10-11
 
 - Timed cardio logging, including speed, incline and distance notes; Apple Watch recording for Pro users when supported data is available.

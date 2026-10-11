@@ -1,5 +1,7 @@
 # Getting started with Lenjo / 练境上手步骤
 
+Looking for meal photo calories, macro tracking or a workout workflow? Read the [feature guide](feature-guide.md). 拍照热量、AI 饮食、训练计划和手表记录的操作问题见[中文功能指南](feature-guide.zh-CN.md)。
+
 ## English
 
 1. Install [Lenjo from the App Store](https://apps.apple.com/app/id6784486285) on an iPhone with iOS 17 or later.

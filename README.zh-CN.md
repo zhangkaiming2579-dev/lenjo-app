@@ -1,6 +1,6 @@
 # 练境 Lenjo — AI 健身教练与训练记录
 
-**练境是一款本地优先的 AI 健身教练 App，适用于 iPhone，可选配 Apple Watch。** 它把训练计划、每组实际完成情况、恢复状态和饮食放进连续的训练上下文，帮助你判断下一次怎么练。
+**练境是一款本地优先的 AI 健身教练与健身管理 App，适用于 iPhone，可选配 Apple Watch。** 支持拍照识别热量、卡路里估算、饮食管理与三大营养素记录。把训练计划、每组实际完成情况、恢复状态和饮食放在一起，帮助你判断下一次怎么练。
 
 [中文产品页](https://zhangkaiming2579-dev.github.io/lenjo-app/zh/) · [English](README.md) · [官网](https://lenjoapp.com/) · [App Store 下载](https://apps.apple.com/app/id6784486285) · [联系作者](https://lenjoapp.com/support.html)
 
@@ -27,6 +27,27 @@
 你也可以直接开始自由训练。有氧训练支持按分钟记录，并按项目填写速度、坡度或距离。Pro 用户可把计划发到 Apple Watch，在手腕上记录训练；在权限和数据可用时查看实时心率、组间恢复参考及训练后的逐组心率时间轴。
 
 饮食支持手动记录或拍照分析。AI 估算食物、热量、蛋白质、碳水与脂肪，你检查并调整结果后再确认保存。体重、活动、恢复和训练趋势可回看；长期记忆可以查看、编辑和删除。
+
+AI 饮食讨论可以结合已保存的饮食、体重目标和训练安排，询问蛋白摄入或训练前后吃什么。建议需要审核，记录不完整时应先补充信息。
+
+## 按使用问题查功能
+
+[中文功能指南](https://zhangkaiming2579-dev.github.io/lenjo-app/zh/guide/)覆盖 14 个场景，每个叫法都有解释，并给出实际操作问题。也可直接阅读[本仓库 Markdown 版](docs/feature-guide.zh-CN.md)或[英文版](docs/feature-guide.md)。
+
+| 想解决的问题 | 功能入口与说明 |
+| --- | --- |
+| 这顿饭有多少卡路里？ | [拍照识别热量、食物识别与大卡估算](docs/feature-guide.zh-CN.md#photo-calories)，检查份量和配料后确认。 |
+| 怎么记录每天吃了什么？ | [饮食管理、饮食日记与热量记录](docs/feature-guide.zh-CN.md#food-log)，支持手动输入。 |
+| 蛋白质、碳水和脂肪能记录吗？ | [三大营养素与蛋白摄入记录](docs/feature-guide.zh-CN.md#food-log)，照片结果为待确认估算。 |
+| AI 饮食怎么结合减脂或增肌目标？ | [营养分析与训练前后饮食讨论](docs/feature-guide.zh-CN.md#ai-nutrition)，基于保存的记录提供参考。 |
+| AI 健身教练能安排今天练什么吗？ | [AI 教练与训练计划](docs/feature-guide.zh-CN.md#plans)，说明目标、器械和时长。 |
+| 健身管理能保存每组实际重量吗？ | [训练日志、逐组记录、补记与文本导入](docs/feature-guide.zh-CN.md#workout-log)，保存后用于复盘。 |
+| 什么时候该加重量或次数？ | [力量训练、渐进超负荷与训练量](docs/feature-guide.zh-CN.md#strength-progress)，结合 RPE 和恢复讨论。 |
+| 新手、居家或只有哑铃怎么练？ | [有限器械与有限时间的训练安排](docs/feature-guide.zh-CN.md#beginner-home)，审核建议是否适合自己。 |
+| 苹果手表能记录训练与组间恢复吗？ | [Apple Watch 腕上训练](docs/feature-guide.zh-CN.md#watch)，需要 Pro、配对与相关授权。 |
+| 有氧、体重和训练进度怎么回看？ | [有氧计时](docs/feature-guide.zh-CN.md#cardio)与[体重、训练日历和趋势](docs/feature-guide.zh-CN.md#body-progress)。 |
+| 不认识器械或想记录体测报告？ | [器械与身体成分报告识别](docs/feature-guide.zh-CN.md#recognition)，检查结果后再确认。 |
+| 不想使用 AI，或想纠正教练记忆？ | [本地记录、健康授权与可编辑记忆](docs/feature-guide.zh-CN.md#local-memory)。 |
 
 ## 免费与 Pro
 

@@ -1,8 +1,8 @@
 # Lenjo / 练境 — AI Fitness Coach
 
-**Lenjo (练境) is a local-first AI fitness coach and workout tracker for iPhone, with optional Apple Watch support.** It connects workout planning, actual sets, recovery context and nutrition records so you can review what to do next.
+**Lenjo (练境) is a local-first AI fitness coach, workout planner and workout tracker for iPhone, with optional Apple Watch support.** It connects workout management, meal photo calorie estimates, macro tracking and recovery context so you can review what to do next.
 
-**练境是一款本地优先的 AI 健身教练与训练记录 App，适用于 iPhone，可选配 Apple Watch。** 先审核计划，再逐组记录实际完成情况，让下一次训练接上这一次。
+**练境是一款本地优先的 AI 健身教练与健身管理 App，适用于 iPhone，可选配 Apple Watch。** 支持拍照识别热量、卡路里估算、饮食管理和三大营养素记录；审核训练计划、逐组记录，再结合饮食与恢复讨论下一次安排。
 
 [Product page / 产品页](https://zhangkaiming2579-dev.github.io/lenjo-app/) · [中文产品页](https://zhangkaiming2579-dev.github.io/lenjo-app/zh/) · [中文介绍](README.zh-CN.md) · [App Store](https://apps.apple.com/app/id6784486285) · [Official website](https://lenjoapp.com/en/) · [中文官网](https://lenjoapp.com/)
 
@@ -28,6 +28,7 @@
 - **Use Apple Watch:** Pro users can send a plan to a paired Watch, log sets from the wrist and view live heart-rate recovery guidance when the required health permissions and data are available.
 - **Record meals:** log food manually or analyze a meal photo. Review the estimated food items, calories, protein, carbohydrate and fat, edit the result and confirm before saving. Photo estimates are not a substitute for weighing food.
 - **Follow progress and context:** review training, body-weight, activity and recovery trends. Inspect, edit or delete the long-term memories used by the coach, including goals, equipment and preferences.
+- **Discuss AI nutrition:** use confirmed food diary entries, weight goals and training context to discuss protein intake and meals around workouts. Review suggestions in light of the completeness of your records.
 
 ## Product screens
 
@@ -38,6 +39,20 @@
 </p>
 
 Product screenshots use example training data from the public website. They illustrate the workflow; appearance may vary by app version and language. Recovery guidance is a fitness reference, not a medical measurement.
+
+## Find a feature by your question
+
+The [English feature guide](https://zhangkaiming2579-dev.github.io/lenjo-app/guide/) and [中文功能指南](https://zhangkaiming2579-dev.github.io/lenjo-app/zh/guide/) explain common terms with definitions and practical questions across 14 topics. Read the same content as [English Markdown](docs/feature-guide.md) or [中文 Markdown](docs/feature-guide.zh-CN.md).
+
+| Your question | Where to start |
+| --- | --- |
+| How many calories are in this meal? | [Food recognition and photo calorie estimates](docs/feature-guide.md#photo-calories): check portions and ingredients before confirming. |
+| How can I track calories and macros? | [Food diary, protein, carbohydrates and fat](docs/feature-guide.md#food-log): enter or review meals, then save. |
+| Can AI discuss diet and training together? | [AI nutrition](docs/feature-guide.md#ai-nutrition): use confirmed meals and training records. |
+| What should I train today? | [AI coaching and workout plans](docs/feature-guide.md#plans): share goals, equipment and available time. |
+| Should I add weight or reps? | [Strength progress and progressive overload](docs/feature-guide.md#strength-progress): discuss actual sets and recovery. |
+| Can I log sets on Apple Watch? | [Wrist workout execution and recovery](docs/feature-guide.md#watch): optional Pro with paired Watch and relevant permissions. |
+| 拍照识别热量、AI 饮食、饮食管理、健身管理怎么用？ | [中文功能与操作问题](docs/feature-guide.zh-CN.md)：查看估算确认、记录流程与 AI 教练说明。 |
 
 ## Free and Pro
 
