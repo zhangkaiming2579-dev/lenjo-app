@@ -1,0 +1,39 @@
+{
+  "name": "Lenjo",
+  "alternateName": "练境",
+  "type": "AI fitness coach and workout tracker",
+  "appStoreId": "6784486285",
+  "appStoreUrl": "https://apps.apple.com/app/id6784486285",
+  "website": "https://lenjoapp.com/",
+  "englishWebsite": "https://lenjoapp.com/en/",
+  "productPage": "https://zhangkaiming2579-dev.github.io/lenjo-app/",
+  "chineseProductPage": "https://zhangkaiming2579-dev.github.io/lenjo-app/zh/",
+  "repository": "https://github.com/zhangkaiming2579-dev/lenjo-app",
+  "support": {
+    "product": "Lenjo / 练境",
+    "email": "KmTech2026@outlook.com"
+  },
+  "minimumRequirements": {
+    "iOS": "17.0",
+    "optionalWatchOS": "10.0"
+  },
+  "access": "Free iPhone workout logging; optional Lenjo Pro for Watch execution and recovery, higher AI allowances and deep reports. Current limits and prices are in the app.",
+  "features": [
+    "AI workout planning",
+    "Set-by-set workout tracking",
+    "Apple Watch recovery guidance",
+    "Meal photo and nutrition logging",
+    "Timed cardio sessions",
+    "Progress and coaching memory"
+  ],
+  "privacyPolicy": "https://lenjoapp.com/privacy.html",
+  "supportUrl": "https://lenjoapp.com/support.html",
+  "dataHandling": "Core records primarily on device. AI requests require consent and process relevant data with third-party model providers.",
+  "sourceCode": "Proprietary; this repository contains public product information.",
+  "informationChecked": "2026-10-11",
+  "sources": [
+    "https://apps.apple.com/us/app/id6784486285",
+    "https://apps.apple.com/cn/app/id6784486285",
+    "https://lenjoapp.com/en/"
+  ]
+}
