@@ -1,6 +1,7 @@
 """Build the two static product-information pages. Python standard library only."""
 from pathlib import Path
 import json
+import hashlib
 from html import escape
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -8,6 +9,7 @@ BASE = "https://zhangkaiming2579-dev.github.io/lenjo-app/"
 REPO = "https://github.com/zhangkaiming2579-dev/lenjo-app"
 STORE = "https://apps.apple.com/app/id6784486285"
 CHECKED = "2026-10-11"
+CSS_VERSION = hashlib.sha256((ROOT / "styles.css").read_bytes()).hexdigest()[:12]
 
 COPY = {
     "en": {
@@ -95,7 +97,7 @@ for locale, c in COPY.items():
 <title>{c['title']}</title><meta name="description" content="{escape(c['description'], quote=True)}"><meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="{url}"><link rel="alternate" hreflang="en" href="{BASE}"><link rel="alternate" hreflang="zh-CN" href="{BASE}zh/"><link rel="alternate" hreflang="x-default" href="{BASE}">
 <meta property="og:type" content="website"><meta property="og:title" content="{c['title']}"><meta property="og:description" content="{escape(c['description'], quote=True)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{BASE}assets/app-icon.png">
-<meta name="twitter:card" content="summary"><meta name="theme-color" content="#0c100e"><link rel="icon" href="{prefix}assets/app-icon.png"><link rel="stylesheet" href="{prefix}styles.css">
+<meta name="twitter:card" content="summary"><meta name="theme-color" content="#0c100e"><link rel="icon" href="{prefix}assets/app-icon.png"><link rel="stylesheet" href="{prefix}styles.css?v={CSS_VERSION}">
 <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False)}</script></head>
 <body class="{locale}"><a class="skip" href="#content">{c['skip']}</a><header><nav class="wrap" aria-label="Navigation"><a class="brand" href="{prefix}index.html"><img src="{prefix}assets/app-icon.png" alt="Lenjo app icon" width="38" height="38">LENJO / 练境</a><div class="nav-links"><a class="optional" href="#features">{c['nav'][0]}</a><a href="#faq">{c['nav'][1]}</a><a href="{c['other']}">{c['nav'][2]}</a></div></nav></header>
 <main id="content" class="wrap"><section class="hero"><div><p class="eyebrow">{c['label']}</p><h1>{c['h1']}</h1><p class="intro">{c['intro']}</p><div class="buttons"><a class="button primary" href="{STORE}">{c['cta']}</a><a class="button" href="{c['web']}">{c['website']}</a></div><p class="note">iPhone · iOS 17+ &nbsp; / &nbsp; Apple Watch · watchOS 10+</p></div><figure><img class="screen" src="{prefix}assets/coach-plan.png" width="1206" height="2622" alt="Lenjo AI coach structured workout plan example"><figcaption>{c['caption']}</figcaption></figure></section>
