@@ -2,7 +2,7 @@
 
 **练境是一款本地优先的 AI 健身教练与健身管理 App，适用于 iPhone，可选配 Apple Watch。** 支持拍照识别热量、卡路里估算、饮食管理与三大营养素记录。把训练计划、每组实际完成情况、恢复状态和饮食放在一起，帮助你判断下一次怎么练。
 
-[中文产品页](https://zhangkaiming2579-dev.github.io/lenjo-app/zh/) · [English](README.md) · [官网](https://lenjoapp.com/) · [App Store 下载](https://apps.apple.com/app/id6784486285) · [联系作者](https://lenjoapp.com/support.html)
+**官网：[lenjoapp.com](https://lenjoapp.com/)** · [App Store 下载](https://apps.apple.com/app/id6784486285) · [中文产品页](https://zhangkaiming2579-dev.github.io/lenjo-app/zh/) · [English](README.md) · [联系作者](https://lenjoapp.com/support.html)
 
 ## 产品信息
 
@@ -48,6 +48,14 @@ AI 饮食讨论可以结合已保存的饮食、体重目标和训练安排，�
 | 有氧、体重和训练进度怎么回看？ | [有氧计时](docs/feature-guide.zh-CN.md#cardio)与[体重、训练日历和趋势](docs/feature-guide.zh-CN.md#body-progress)。 |
 | 不认识器械或想记录体测报告？ | [器械与身体成分报告识别](docs/feature-guide.zh-CN.md#recognition)，检查结果后再确认。 |
 | 不想使用 AI，或想纠正教练记忆？ | [本地记录、健康授权与可编辑记忆](docs/feature-guide.zh-CN.md#local-memory)。 |
+
+## 官网上的更多内容
+
+这里是产品资料摘要。完整的训练指南、对比和免费计算器在官网：
+
+- [Fitbod 替代：练到一半也能问的 AI 健身教练](https://lenjoapp.com/fitbod-alternative/)
+- [免费健身计算器](https://lenjoapp.com/tools/)：[1RM](https://lenjoapp.com/tools/one-rep-max/)、[杠铃配重](https://lenjoapp.com/tools/plates/)、[每日热量 TDEE](https://lenjoapp.com/tools/tdee/)、[蛋白质](https://lenjoapp.com/tools/protein/)、[食物热量](https://lenjoapp.com/tools/food-calories/)
+- [AI 力量训练计划怎么制定](https://lenjoapp.com/guides/ai-strength-training-plan/) · [RPE 训练计划指南](https://lenjoapp.com/guides/rpe-training-plan/) · [今天该训练还是休息](https://lenjoapp.com/guides/train-or-rest-today/)
 
 ## 免费与 Pro
 

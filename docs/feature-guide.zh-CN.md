@@ -59,6 +59,8 @@
 
 餐食扫描支持合餐份量与同餐分项；按自己实际吃的部分检查并修改，避免把整桌算成一人的摄入。
 
+官网相关页面： [食物热量计算器](https://lenjoapp.com/tools/food-calories/)
+
 <a id="food-log"></a>
 
 ## 饮食管理与营养素记录
@@ -83,6 +85,8 @@
 ### 摄入卡路里和运动消耗卡路里是一回事吗？
 
 两者分别是吃进去的能量与运动能量记录。练境保留饮食与训练信息，讨论时需注意数据来源和误差。
+
+官网相关页面： [蛋白质计算器](https://lenjoapp.com/tools/protein/) · [三大营养素计算器](https://lenjoapp.com/tools/macros/)
 
 <a id="ai-nutrition"></a>
 
@@ -109,6 +113,8 @@ AI 饮食建议以已记录的信息为依据。你可以说明体重目标、�
 
 可以把训练记录、饮食和体重目标放进同一次讨论，持续核对实际变化；练境不保证减重或增肌结果。
 
+官网相关页面： [每日热量（TDEE）计算器](https://lenjoapp.com/tools/tdee/) · [蛋白质计算器](https://lenjoapp.com/tools/protein/)
+
 <a id="ai-coach"></a>
 
 ## AI 健身与 AI 教练
@@ -133,6 +139,8 @@ AI 饮食建议以已记录的信息为依据。你可以说明体重目标、�
 ### 可以只记录训练，不和 AI 聊天吗？
 
 可以。iPhone 的训练执行与记录独立可用，AI 对话需联网、同意处理并受额度限制。
+
+官网相关页面： [Fitbod 替代：练到一半也能问的 AI 教练](https://lenjoapp.com/fitbod-alternative/)
 
 <a id="plans"></a>
 
@@ -159,6 +167,8 @@ AI 饮食建议以已记录的信息为依据。你可以说明体重目标、�
 
 开始前可审核并修改动作、组数、次数和重量，训练时记录实际表现。
 
+官网相关页面： [AI 力量训练计划怎么制定](https://lenjoapp.com/guides/ai-strength-training-plan/)
+
 <a id="workout-log"></a>
 
 ## 健身管理与逐组训练记录
@@ -183,6 +193,8 @@ AI 饮食建议以已记录的信息为依据。你可以说明体重目标、�
 ### 其他地方的训练文字能导入吗？
 
 当前公开版本支持粘贴文本导入历史训练，包含有氧时间和距离；导入后需要核对内容。
+
+官网相关页面： [训练记录怎么复盘](https://lenjoapp.com/guides/workout-log-analysis/) · [杠铃配重计算器](https://lenjoapp.com/tools/plates/)
 
 <a id="strength-progress"></a>
 
@@ -209,6 +221,8 @@ AI 饮食建议以已记录的信息为依据。你可以说明体重目标、�
 
 训练数据中的 1RM 是参考估算，需要结合动作、记录质量和个人状态理解。
 
+官网相关页面： [1RM 计算器](https://lenjoapp.com/tools/one-rep-max/) · [RPE 训练计划指南](https://lenjoapp.com/guides/rpe-training-plan/)
+
 <a id="beginner-home"></a>
 
 ## 新手、居家与有限时间训练
@@ -233,6 +247,8 @@ AI 饮食建议以已记录的信息为依据。你可以说明体重目标、�
 ### 只有半小时也能安排训练吗？
 
 可以明确今天只有半小时；执行前检查计划总时长与休息安排是否合适。
+
+官网相关页面： [训练时长计算器](https://lenjoapp.com/tools/workout-duration/)
 
 <a id="watch"></a>
 
@@ -259,6 +275,8 @@ Pro 用户可在腕上执行与记录，需安装配对的 Watch App；实际次
 
 可以在 iPhone 独立执行、逐组记录并保存训练，手表不是前提。
 
+官网相关页面： [Apple Watch 力量训练怎么记录](https://lenjoapp.com/guides/apple-watch-strength-training/)
+
 <a id="recovery"></a>
 
 ## 训练恢复与组间休息
@@ -283,6 +301,8 @@ Pro 用户可在腕上执行与记录，需安装配对的 Watch App；实际次
 ### 没有心率或 HRV 数据还能训练吗？
 
 可以。缺少健康数据时仍能记录训练和主观感受，不应把缺失数据当作正常结果。
+
+官网相关页面： [今天该训练还是休息](https://lenjoapp.com/guides/train-or-rest-today/)
 
 <a id="cardio"></a>
 
@@ -333,6 +353,8 @@ Pro 手表训练在数据可用时能记录热量；应理解为设备估算，�
 ### 能保证减脂或练出肌肉吗？
 
 不能保证。练境提供记录、计划与参考建议，结果还受到执行、饮食、恢复和个人情况影响。
+
+官网相关页面： [BMI 计算器](https://lenjoapp.com/tools/bmi/)
 
 <a id="recognition"></a>
 

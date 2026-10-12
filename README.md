@@ -4,7 +4,7 @@
 
 **练境是一款本地优先的 AI 健身教练与健身管理 App，适用于 iPhone，可选配 Apple Watch。** 支持拍照识别热量、卡路里估算、饮食管理和三大营养素记录；审核训练计划、逐组记录，再结合饮食与恢复讨论下一次安排。
 
-[Product page / 产品页](https://zhangkaiming2579-dev.github.io/lenjo-app/) · [中文产品页](https://zhangkaiming2579-dev.github.io/lenjo-app/zh/) · [中文介绍](README.zh-CN.md) · [App Store](https://apps.apple.com/app/id6784486285) · [Official website](https://lenjoapp.com/en/) · [中文官网](https://lenjoapp.com/)
+**Official website: [lenjoapp.com](https://lenjoapp.com/en/)** · [App Store](https://apps.apple.com/app/id6784486285) · [中文官网](https://lenjoapp.com/) · [Product page / 产品页](https://zhangkaiming2579-dev.github.io/lenjo-app/) · [中文介绍](README.zh-CN.md)
 
 ## Product facts
 
@@ -53,6 +53,15 @@ The [English feature guide](https://zhangkaiming2579-dev.github.io/lenjo-app/gui
 | Should I add weight or reps? | [Strength progress and progressive overload](docs/feature-guide.md#strength-progress): discuss actual sets and recovery. |
 | Can I log sets on Apple Watch? | [Wrist workout execution and recovery](docs/feature-guide.md#watch): optional Pro with paired Watch and relevant permissions. |
 | 拍照识别热量、AI 饮食、饮食管理、健身管理怎么用？ | [中文功能与操作问题](docs/feature-guide.zh-CN.md)：查看估算确认、记录流程与 AI 教练说明。 |
+
+## On lenjoapp.com
+
+This repository is a product summary. Full guides, comparisons and free calculators live on the official website:
+
+- [Fitbod alternative with an AI coach you can ask mid-workout](https://lenjoapp.com/en/fitbod-alternative/)
+- [Fitbod vs Hevy: price, AI plans and Apple Watch](https://lenjoapp.com/en/compare/fitbod-vs-hevy/)
+- [Free fitness calculators](https://lenjoapp.com/en/tools/): [1RM](https://lenjoapp.com/en/tools/one-rep-max/), [barbell plates](https://lenjoapp.com/en/tools/plates/), [TDEE](https://lenjoapp.com/en/tools/tdee/), [protein](https://lenjoapp.com/en/tools/protein/), [food calories](https://lenjoapp.com/en/tools/food-calories/)
+- [AI strength training plan that adapts](https://lenjoapp.com/en/guides/ai-strength-training-plan/) · [RPE workout planner](https://lenjoapp.com/en/guides/rpe-workout-planner/) · [Apple Watch recovery between sets](https://lenjoapp.com/en/guides/apple-watch-workout-recovery/)
 
 ## Free and Pro
 

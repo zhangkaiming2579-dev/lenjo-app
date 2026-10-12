@@ -10,6 +10,69 @@ BASE = "https://zhangkaiming2579-dev.github.io/lenjo-app/"
 REPO = "https://github.com/zhangkaiming2579-dev/lenjo-app"
 STORE = "https://apps.apple.com/app/id6784486285"
 CHECKED = "2026-10-11"
+UPDATED = "2026-10-12"
+SITE = "https://lenjoapp.com"
+
+# Pages on the official site that answer the same question in more depth.
+# Each guide topic and the product home link to them so readers and crawlers
+# land on lenjoapp.com, the canonical home of Lenjo.
+OFFICIAL = {
+    "zh": {
+        "tools": ("免费健身计算器", "/tools/"),
+        "food-calories": ("食物热量计算器", "/tools/food-calories/"),
+        "protein": ("蛋白质计算器", "/tools/protein/"),
+        "macros": ("三大营养素计算器", "/tools/macros/"),
+        "tdee": ("每日热量（TDEE）计算器", "/tools/tdee/"),
+        "one-rep-max": ("1RM 计算器", "/tools/one-rep-max/"),
+        "plates": ("杠铃配重计算器", "/tools/plates/"),
+        "workout-duration": ("训练时长计算器", "/tools/workout-duration/"),
+        "bmi": ("BMI 计算器", "/tools/bmi/"),
+        "fitbod": ("Fitbod 替代：练到一半也能问的 AI 教练", "/fitbod-alternative/"),
+        "plan-guide": ("AI 力量训练计划怎么制定", "/guides/ai-strength-training-plan/"),
+        "log-guide": ("训练记录怎么复盘", "/guides/workout-log-analysis/"),
+        "rpe-guide": ("RPE 训练计划指南", "/guides/rpe-training-plan/"),
+        "watch-guide": ("Apple Watch 力量训练怎么记录", "/guides/apple-watch-strength-training/"),
+        "recovery-guide": ("今天该训练还是休息", "/guides/train-or-rest-today/"),
+    },
+    "en": {
+        "tools": ("Free fitness calculators", "/en/tools/"),
+        "food-calories": ("Food calorie calculator", "/en/tools/food-calories/"),
+        "protein": ("Protein calculator", "/en/tools/protein/"),
+        "macros": ("Macro calculator", "/en/tools/macros/"),
+        "tdee": ("TDEE calculator", "/en/tools/tdee/"),
+        "one-rep-max": ("1RM calculator", "/en/tools/one-rep-max/"),
+        "plates": ("Barbell plate calculator", "/en/tools/plates/"),
+        "workout-duration": ("Workout duration calculator", "/en/tools/workout-duration/"),
+        "bmi": ("BMI calculator", "/en/tools/bmi/"),
+        "fitbod": ("Fitbod alternative with a coach you can ask", "/en/fitbod-alternative/"),
+        "compare": ("Fitbod vs Hevy compared", "/en/compare/fitbod-vs-hevy/"),
+        "plan-guide": ("AI strength training plan that adapts", "/en/guides/ai-strength-training-plan/"),
+        "log-guide": ("Workout log analysis", "/en/guides/workout-log-analysis/"),
+        "rpe-guide": ("RPE workout planner", "/en/guides/rpe-workout-planner/"),
+        "watch-guide": ("Apple Watch recovery between sets", "/en/guides/apple-watch-workout-recovery/"),
+        "recovery-guide": ("How long to rest between sets", "/en/guides/strength-training-rest-time/"),
+    },
+}
+TOPIC_LINKS = {
+    "photo-calories": ["food-calories"],
+    "food-log": ["protein", "macros"],
+    "ai-nutrition": ["tdee", "protein"],
+    "ai-coach": ["fitbod", "compare"],
+    "plans": ["plan-guide", "compare"],
+    "workout-log": ["log-guide", "plates"],
+    "strength-progress": ["one-rep-max", "rpe-guide"],
+    "beginner-home": ["workout-duration"],
+    "watch": ["watch-guide"],
+    "recovery": ["recovery-guide"],
+    "body-progress": ["bmi"],
+}
+HOME_LINKS = {"zh": ["tools", "fitbod", "one-rep-max", "food-calories", "plan-guide", "recovery-guide"],
+              "en": ["tools", "fitbod", "compare", "one-rep-max", "food-calories", "plan-guide"]}
+
+
+def official(locale, keys):
+    """(label, absolute URL) pairs for the keys that exist in this locale."""
+    return [(OFFICIAL[locale][k][0], SITE + OFFICIAL[locale][k][1]) for k in keys if k in OFFICIAL[locale]]
 CSS_VERSION = hashlib.sha256((ROOT / "styles.css").read_bytes()).hexdigest()[:12]
 
 COPY = {
@@ -18,7 +81,7 @@ COPY = {
         "description": "Lenjo is an AI fitness coach, workout planner and workout tracker for iPhone, with meal photo calorie estimates, macro logging and optional Apple Watch recovery guidance.",
         "label": "Product information · iPhone + Apple Watch", "h1": "Lenjo / 练境<br><span>AI fitness coach.</span>",
         "intro": "Plan a session with an AI fitness coach. Log actual sets and meals. Review the next step. Lenjo connects workout management, meal photo calorie estimates, macro tracking and recovery context on iPhone, with optional Apple Watch support.",
-        "cta": "Get Lenjo on the App Store ↗", "website": "Official website ↗", "web": "https://lenjoapp.com/en/",
+        "cta": "Get Lenjo on the App Store ↗", "website": "Official website ↗", "official_title": "More on lenjoapp.com", "official_intro": "This page is a product summary. The official website lenjoapp.com has the full guides, comparisons and free calculators.", "official_more": "On lenjoapp.com:", "web": "https://lenjoapp.com/en/",
         "nav": ["Features", "FAQ", "中文"], "other": "zh/", "caption": "Example workout plan · Review before training",
         "facts_title": "One app. A continuous training context.", "facts": [("Product", "Lenjo / 练境"), ("Devices", "iPhone · iOS 17+<br>Apple Watch · watchOS 10+"), ("Access", "Free iPhone workout logging<br>Optional Lenjo Pro"), ("Support", "Lenjo / 练境<br>lenjoapp.com")],
         "features_title": "From a suggested plan to completed sets.",
@@ -54,7 +117,7 @@ COPY = {
         "description": "练境 Lenjo 是 iPhone AI 健身教练与训练管理 App，支持拍照识别热量和卡路里估算、饮食管理、三大营养素记录、AI 训练计划及可选 Apple Watch 组间恢复参考。",
         "label": "产品介绍 · iPhone + Apple Watch", "h1": "练境 Lenjo<br><span>AI 健身教练。</span>",
         "intro": "让 AI 教练安排计划，记录实际完成的每一组，再讨论下一次怎么练。练境把健身管理与饮食管理放在一起：拍照识别食物并估算热量和卡路里，记录蛋白质、碳水与脂肪，让训练、恢复和饮食接上下一次判断。适用于 iPhone，可选配 Apple Watch。",
-        "cta": "在 App Store 获取练境 ↗", "website": "查看官网 ↗", "web": "https://lenjoapp.com/",
+        "cta": "在 App Store 获取练境 ↗", "website": "查看官网 ↗", "official_title": "官网上的更多内容", "official_intro": "这里是产品资料摘要。完整的训练指南、对比和免费计算器在官网 lenjoapp.com。", "official_more": "官网相关页面：", "web": "https://lenjoapp.com/",
         "nav": ["功能", "常见问题", "English"], "other": "../", "caption": "训练计划示例 · 审核后再开始",
         "facts_title": "每一次记录，接上下一次训练。", "facts": [("产品名称", "练境 / Lenjo"), ("支持设备", "iPhone · iOS 17+<br>Apple Watch · watchOS 10+"), ("免费与 Pro", "iPhone 训练记录免费<br>Pro 为可选订阅"), ("产品支持", "练境 / Lenjo<br>lenjoapp.com")],
         "features_title": "从计划，到实际完成的每一组。",
@@ -104,13 +167,14 @@ for locale, c in COPY.items():
     url = BASE + ("zh/" if locale == "zh" else "")
     schema = {"@context": "https://schema.org", "@graph": [
         {"@type": "SoftwareApplication", "@id": "https://lenjoapp.com/#app", "name": "Lenjo", "alternateName": "练境", "applicationCategory": "HealthApplication", "operatingSystem": "iOS 17 or later; optional watchOS 10 or later", "url": "https://lenjoapp.com/", "downloadUrl": STORE, "image": BASE + "assets/app-icon.png", "description": c["description"], "sameAs": [STORE, REPO], "featureList": [x[0] for x in c["features"]]},
-        {"@type": "WebPage", "@id": url, "url": url, "name": c["title"], "inLanguage": c["lang"], "description": c["description"], "dateModified": CHECKED, "about": {"@id": "https://lenjoapp.com/#app"}},
+        {"@type": "WebPage", "@id": url, "url": url, "name": c["title"], "inLanguage": c["lang"], "description": c["description"], "dateModified": UPDATED, "about": {"@id": "https://lenjoapp.com/#app"}},
     ]}
     facts = "".join(f"<div><dt>{escape(k)}</dt><dd>{v}</dd></div>" for k, v in c["facts"])
     features = "".join(f'<article class="feature"><span class="number">0{i+1}</span><h3>{escape(h)}</h3><p>{escape(t)}</p></article>' for i, (h, t) in enumerate(c["features"]))
     flow = "".join(f'<article><span class="number">0{i+1}</span><h3>{escape(h)}</h3><p>{escape(t)}</p></article>' for i, (h, t) in enumerate(c["flow"]))
     faq = "".join(f"<article><h3>{escape(q)}</h3><p>{escape(a)}</p></article>" for q, a in c["faq"])
     gc = GUIDE_COPY[locale]
+    official_home = "".join(f'<li><a href="{href}">{escape(label)} ↗</a></li>' for label, href in official(locale, HOME_LINKS[locale]))
     html = f'''<!doctype html>
 <html lang="{c['lang']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{c['title']}</title><meta name="description" content="{escape(c['description'], quote=True)}"><meta name="robots" content="index,follow,max-image-preview:large">
@@ -127,7 +191,8 @@ for locale, c in COPY.items():
 <section class="section two-col"><article><h2>{c['access_title']}</h2><p>{c['access']}</p></article><article><h2>{c['data_title']}</h2><p>{c['data']}</p><a href="https://lenjoapp.com/privacy.html">{c['privacy']} ↗</a></article></section>
 <section id="faq" class="section"><p class="eyebrow">05 / FAQ</p><h2>{c['faq_title']}</h2><div class="faq">{faq}</div></section>
 <section class="section"><p class="eyebrow">06 / GUIDE</p><h2>{gc['link']}</h2><p class="intro">{gc['teaser']}</p><a class="button" href="guide/">{gc['link']} ↗</a></section>
-<section class="section"><p class="eyebrow">07 / SUPPORT</p><h2>{c['support_title']}</h2><p style="max-width:750px">{c['support']}</p><div class="links"><a href="https://lenjoapp.com/support.html">{c['support_link']}</a><a href="mailto:KmTech2026@outlook.com">KmTech2026@outlook.com</a><a href="{REPO}">GitHub</a><a href="https://lenjoapp.com/terms.html">{c['terms']}</a></div></section>
+<section class="section"><p class="eyebrow">07 / LENJOAPP.COM</p><h2>{c['official_title']}</h2><p style="max-width:750px">{c['official_intro']}</p><ul class="official-links">{official_home}</ul></section>
+<section class="section"><p class="eyebrow">08 / SUPPORT</p><h2>{c['support_title']}</h2><p style="max-width:750px">{c['support']}</p><div class="links"><a href="https://lenjoapp.com/support.html">{c['support_link']}</a><a href="mailto:KmTech2026@outlook.com">KmTech2026@outlook.com</a><a href="{REPO}">GitHub</a><a href="https://lenjoapp.com/terms.html">{c['terms']}</a></div></section>
 </main><footer><div class="wrap"><p>{c['boundary']}</p><p>{c['checked']}</p><div class="footer-row"><span>© 2026 Lenjo · {c['rights']}</span><a href="{prefix}product.json">Product facts JSON</a></div></div></footer></body></html>
 '''
     target = ROOT / ("zh/index.html" if locale == "zh" else "index.html")
@@ -151,7 +216,9 @@ for locale, gc in GUIDE_COPY.items():
         local = g[locale]
         terms = "".join(f'<div class="term-row"><dt>{escape(" / ".join(names))}</dt><dd>{escape(definition)}</dd></div>' for names, definition in local["terms"])
         qa = "".join(f'<article><h4>{escape(q)}</h4><p>{escape(a)}</p></article>' for q, a in local["qa"])
-        sections.append(f'<section class="section guide-topic" id="{g["id"]}"><h2>{escape(local["title"])}</h2><p class="intro">{escape(local["intro"])}</p><h3>{gc["terms"]}</h3><dl class="glossary">{terms}</dl><h3>{gc["questions"]}</h3><div class="guide-qa">{qa}</div><a class="back-top" href="#topics">{gc["top"]} ↑</a></section>')
+        links = official(locale, TOPIC_LINKS.get(g["id"], []))
+        more = f'<p class="official-more">{c["official_more"]} ' + " · ".join(f'<a href="{href}">{escape(label)}</a>' for label, href in links) + "</p>" if links else ""
+        sections.append(f'<section class="section guide-topic" id="{g["id"]}"><h2>{escape(local["title"])}</h2><p class="intro">{escape(local["intro"])}</p><h3>{gc["terms"]}</h3><dl class="glossary">{terms}</dl><h3>{gc["questions"]}</h3><div class="guide-qa">{qa}</div>{more}<a class="back-top" href="#topics">{gc["top"]} ↑</a></section>')
         markdown.extend([f'<a id="{g["id"]}"></a>', f'## {local["title"]}', local["intro"],
             f'| {gc["term_label"]} | {gc["definition_label"]} |', '| --- | --- |'])
         # Keep table rows contiguous; each item otherwise gets a blank paragraph.
@@ -159,12 +226,14 @@ for locale, gc in GUIDE_COPY.items():
         markdown[-2:] = ["\n".join(markdown[-2:]) + "\n" + table]
         for q, a in local["qa"]:
             markdown.extend([f'### {q}', a])
+        if links:
+            markdown.append(c["official_more"] + " " + " · ".join(f"[{label}]({href})" for label, href in links))
     markdown.extend([f'## {gc["sources"]}', gc["source_note"],
         f'[App Store]({STORE}) · [Lenjo]({c["web"]}) · [FAQ](faq.md)', c["data"], c["boundary"]])
     doc = ROOT / ("docs/feature-guide.zh-CN.md" if locale == "zh" else "docs/feature-guide.md")
     doc.write_text("\n\n".join(markdown) + "\n")
     schema = {"@context": "https://schema.org", "@type": "Article", "headline": gc["title"],
-        "description": gc["description"], "inLanguage": c["lang"], "dateModified": CHECKED,
+        "description": gc["description"], "inLanguage": c["lang"], "dateModified": UPDATED,
         "mainEntityOfPage": url, "author": {"@type": "Organization", "name": "Lenjo / 练境", "url": "https://lenjoapp.com/"},
         "about": {"@type": "SoftwareApplication", "@id": "https://lenjoapp.com/#app", "name": "Lenjo", "alternateName": "练境"}}
     html = f'''<!doctype html>
@@ -184,9 +253,10 @@ for locale, gc in GUIDE_COPY.items():
 
 facts = {"name": "Lenjo", "alternateName": "练境", "type": "AI fitness coach and workout tracker", "appStoreId": "6784486285", "appStoreUrl": STORE, "website": "https://lenjoapp.com/", "englishWebsite": "https://lenjoapp.com/en/", "productPage": BASE, "chineseProductPage": BASE + "zh/", "repository": REPO, "support": {"product": "Lenjo / 练境", "email": "KmTech2026@outlook.com"}, "minimumRequirements": {"iOS": "17.0", "optionalWatchOS": "10.0"}, "access": "Free iPhone workout logging; optional Lenjo Pro for Watch execution and recovery, higher AI allowances and deep reports. Current limits and prices are in the app.", "features": [x[0] for x in COPY["en"]["features"]], "privacyPolicy": "https://lenjoapp.com/privacy.html", "supportUrl": "https://lenjoapp.com/support.html", "dataHandling": "Core records primarily on device. AI requests require consent and process relevant data with third-party model providers.", "sourceCode": "Proprietary; this repository contains public product information.", "informationChecked": CHECKED, "sources": ["https://apps.apple.com/us/app/id6784486285", "https://apps.apple.com/cn/app/id6784486285", "https://lenjoapp.com/en/"]}
 facts["featureGuides"] = {"en": BASE + "guide/", "zh-CN": BASE + "zh/guide/"}
+facts["officialPages"] = {locale: {k: SITE + path for k, (_, path) in pages.items()} for locale, pages in OFFICIAL.items()}
 (ROOT / "product.json").write_text(json.dumps(facts, ensure_ascii=False, indent=2) + "\n")
 (ROOT / "sitemap.xml").write_text(f'''<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{''.join(f'<url><loc>{BASE}{path}</loc><lastmod>{CHECKED}</lastmod></url>' for path in ['', 'zh/', 'guide/', 'zh/guide/'])}</urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{''.join(f'<url><loc>{BASE}{path}</loc><lastmod>{UPDATED}</lastmod></url>' for path in ['', 'zh/', 'guide/', 'zh/guide/'])}</urlset>
 ''')
 for locale in COPY:
     expressions = {term for g in GUIDE for names, _ in g[locale]["terms"] for term in names}

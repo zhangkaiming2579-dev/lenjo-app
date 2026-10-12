@@ -59,6 +59,8 @@ Select a meal image for analysis. Lighting and occlusion affect the estimate, so
 
 Meal scans support shared-table portions and separate entries. Adjust to the portion you ate instead of recording the entire table.
 
+On lenjoapp.com: [Food calorie calculator](https://lenjoapp.com/en/tools/food-calories/)
+
 <a id="food-log"></a>
 
 ## Food diaries and macro tracking
@@ -83,6 +85,8 @@ Yes. Track all three macros; photo-derived values are estimates to review.
 ### Are food calories and workout calories the same record?
 
 They describe intake and expenditure respectively. Lenjo keeps meal and workout context; consider data sources and uncertainty when discussing them.
+
+On lenjoapp.com: [Protein calculator](https://lenjoapp.com/en/tools/protein/) · [Macro calculator](https://lenjoapp.com/en/tools/macros/)
 
 <a id="ai-nutrition"></a>
 
@@ -109,6 +113,8 @@ Save today's meals and tell the coach your weight goal and training context. Adv
 
 Discuss workout records, meals and weight goals together and review actual changes over time. Outcomes are not guaranteed.
 
+On lenjoapp.com: [TDEE calculator](https://lenjoapp.com/en/tools/tdee/) · [Protein calculator](https://lenjoapp.com/en/tools/protein/)
+
 <a id="ai-coach"></a>
 
 ## AI fitness coaching
@@ -133,6 +139,8 @@ Review and edit a structured plan, start the workout and log what you actually c
 ### Can I track workouts without chatting with AI?
 
 Yes. iPhone workout execution and logging work independently. AI chat needs internet, consent and an available allowance.
+
+On lenjoapp.com: [Fitbod alternative with a coach you can ask](https://lenjoapp.com/en/fitbod-alternative/) · [Fitbod vs Hevy compared](https://lenjoapp.com/en/compare/fitbod-vs-hevy/)
 
 <a id="plans"></a>
 
@@ -159,6 +167,8 @@ Share available days, session length and goals. Ask for the reasoning and revise
 
 Review and change exercises, sets, reps and weights before starting, then log actual performance.
 
+On lenjoapp.com: [AI strength training plan that adapts](https://lenjoapp.com/en/guides/ai-strength-training-plan/) · [Fitbod vs Hevy compared](https://lenjoapp.com/en/compare/fitbod-vs-hevy/)
+
 <a id="workout-log"></a>
 
 ## Workout management and set logs
@@ -183,6 +193,8 @@ Use past workout entry and include the details you can confirm.
 ### Can I import a workout from a text log?
 
 The checked public version supports pasted workout logs, including cardio time and distance. Review imported details.
+
+On lenjoapp.com: [Workout log analysis](https://lenjoapp.com/en/guides/workout-log-analysis/) · [Barbell plate calculator](https://lenjoapp.com/en/tools/plates/)
 
 <a id="strength-progress"></a>
 
@@ -209,6 +221,8 @@ Use training trends, the calendar and reports. Conclusions depend on complete sa
 
 It is an estimate. Interpret it in light of the exercise, record quality and your condition.
 
+On lenjoapp.com: [1RM calculator](https://lenjoapp.com/en/tools/one-rep-max/) · [RPE workout planner](https://lenjoapp.com/en/guides/rpe-workout-planner/)
+
 <a id="beginner-home"></a>
 
 ## Beginner and home workout planning
@@ -233,6 +247,8 @@ Specify dumbbells as the equipment constraint and log actual sessions on iPhone.
 ### Can I plan a workout with only half an hour?
 
 State the half-hour limit and check the suggested duration and rest before starting.
+
+On lenjoapp.com: [Workout duration calculator](https://lenjoapp.com/en/tools/workout-duration/)
 
 <a id="watch"></a>
 
@@ -259,6 +275,8 @@ No. Target reps are prefilled and you adjust them to actual performance.
 
 Yes. Execute, log sets and save sessions on iPhone alone.
 
+On lenjoapp.com: [Apple Watch recovery between sets](https://lenjoapp.com/en/guides/apple-watch-workout-recovery/)
+
 <a id="recovery"></a>
 
 ## Recovery context and rest between sets
@@ -283,6 +301,8 @@ Tell the coach about sleep and how you feel, then discuss changes using saved wo
 ### Can I train without heart-rate or HRV data?
 
 Yes. Log workouts and perceived effort; missing health data should not be treated as a normal measurement.
+
+On lenjoapp.com: [How long to rest between sets](https://lenjoapp.com/en/guides/strength-training-rest-time/)
 
 <a id="cardio"></a>
 
@@ -333,6 +353,8 @@ Calendar and day counts use saved workouts; distinguish unfinished plans from co
 ### Does Lenjo guarantee fat loss or muscle gain?
 
 No. It provides logging, planning and references; results also depend on execution, nutrition, recovery and individual factors.
+
+On lenjoapp.com: [BMI calculator](https://lenjoapp.com/en/tools/bmi/)
 
 <a id="recognition"></a>
 

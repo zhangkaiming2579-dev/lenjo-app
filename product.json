@@ -39,5 +39,42 @@
   "featureGuides": {
     "en": "https://zhangkaiming2579-dev.github.io/lenjo-app/guide/",
     "zh-CN": "https://zhangkaiming2579-dev.github.io/lenjo-app/zh/guide/"
+  },
+  "officialPages": {
+    "zh": {
+      "tools": "https://lenjoapp.com/tools/",
+      "food-calories": "https://lenjoapp.com/tools/food-calories/",
+      "protein": "https://lenjoapp.com/tools/protein/",
+      "macros": "https://lenjoapp.com/tools/macros/",
+      "tdee": "https://lenjoapp.com/tools/tdee/",
+      "one-rep-max": "https://lenjoapp.com/tools/one-rep-max/",
+      "plates": "https://lenjoapp.com/tools/plates/",
+      "workout-duration": "https://lenjoapp.com/tools/workout-duration/",
+      "bmi": "https://lenjoapp.com/tools/bmi/",
+      "fitbod": "https://lenjoapp.com/fitbod-alternative/",
+      "plan-guide": "https://lenjoapp.com/guides/ai-strength-training-plan/",
+      "log-guide": "https://lenjoapp.com/guides/workout-log-analysis/",
+      "rpe-guide": "https://lenjoapp.com/guides/rpe-training-plan/",
+      "watch-guide": "https://lenjoapp.com/guides/apple-watch-strength-training/",
+      "recovery-guide": "https://lenjoapp.com/guides/train-or-rest-today/"
+    },
+    "en": {
+      "tools": "https://lenjoapp.com/en/tools/",
+      "food-calories": "https://lenjoapp.com/en/tools/food-calories/",
+      "protein": "https://lenjoapp.com/en/tools/protein/",
+      "macros": "https://lenjoapp.com/en/tools/macros/",
+      "tdee": "https://lenjoapp.com/en/tools/tdee/",
+      "one-rep-max": "https://lenjoapp.com/en/tools/one-rep-max/",
+      "plates": "https://lenjoapp.com/en/tools/plates/",
+      "workout-duration": "https://lenjoapp.com/en/tools/workout-duration/",
+      "bmi": "https://lenjoapp.com/en/tools/bmi/",
+      "fitbod": "https://lenjoapp.com/en/fitbod-alternative/",
+      "compare": "https://lenjoapp.com/en/compare/fitbod-vs-hevy/",
+      "plan-guide": "https://lenjoapp.com/en/guides/ai-strength-training-plan/",
+      "log-guide": "https://lenjoapp.com/en/guides/workout-log-analysis/",
+      "rpe-guide": "https://lenjoapp.com/en/guides/rpe-workout-planner/",
+      "watch-guide": "https://lenjoapp.com/en/guides/apple-watch-workout-recovery/",
+      "recovery-guide": "https://lenjoapp.com/en/guides/strength-training-rest-time/"
+    }
   }
 }
